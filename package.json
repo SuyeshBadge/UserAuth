@@ -10,6 +10,7 @@
     "@sailshq/socket.io-redis": "^5.2.0",
     "@socketlabs/email": "^1.2.1",
     "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
     "grunt": "1.0.4",
     "jsonwebtoken": "^8.5.1",
     "node-mailjet": "^3.3.7",

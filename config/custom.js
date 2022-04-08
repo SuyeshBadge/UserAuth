@@ -17,13 +17,13 @@ module.exports.custom = {
   // sendgridSecret: 'SG.fake.3e0Bn0qSQVnwb1E4qNPz9JZP5vLZYqjh7sn8S93oSHU',
   // stripeSecret: 'sk_test_Zzd814nldl91104qor5911gjald',
   // …
-  JWT_SECRET: 'qcxVtRrAAnh5yBwksBrnZ33ruM39xb6C',
-  JWT_COOKIE_EXPIRES_IN: 60, //days
-  JWT_EXPIRES_IN: 300, //secs
-  NODE_ENV: 'development',
+  JWT_SECRET: process.env.JWT_SECRET,
+  JWT_COOKIE_EXPIRES_IN: process.env.JWT_COOKIE_EXPIRES_IN, //days
+  JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN, //secs
+  NODE_ENV: process.env.NODE_ENV,
 
   //MailJet creds
-  MJ_APIKEY_PUBLIC: 'ad2f9d1bcb4e01ada47d7d6436b2ca0d',
-  MJ_APIKEY_PRIVATE: 'e995bbffe00db8742f2836e12d93fcf9',
+  MJ_APIKEY_PUBLIC: process.env.MJ_APIKEY_PUBLIC,
+  MJ_APIKEY_PRIVATE: process.env.MJ_APIKEY_PRIVATE,
 };
 

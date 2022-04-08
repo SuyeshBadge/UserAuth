@@ -229,7 +229,7 @@ module.exports = {
     //   'https://example.com',
     //   'https://staging.example.com',
     // ],
-    onlyAllowOrigins: ['http://suyeshauth.herokuapp.com/'],
+    onlyAllowOrigins: ['http://suyeshauth.herokuapp.com'],
     /***************************************************************************
      *                                                                          *
      * If you are deploying a cluster of multiple servers and/or processes,     *

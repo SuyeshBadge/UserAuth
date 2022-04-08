@@ -47,7 +47,6 @@ module.exports = {
       // Hash password
       const encryptedPassword = bcrypt.hashSync(inputs.password, 10);
       //
-      // eslint-disable-next-line no-unused-vars
       const user = await User.create({
         firstName: inputs.firstName,
         lastName: inputs.lastName,
@@ -62,7 +61,9 @@ module.exports = {
           return err.message;
         })
         .fetch();
-      return this.res.redirect('/verify-email');
+
+      delete user.encryptedPassword;
+      return this.res.send(user);
     } catch (err) {
       return this.res.status(400).send(err.message);
     }

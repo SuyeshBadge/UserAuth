@@ -20,8 +20,6 @@
  */
 
 module.exports = {
-
-
   /**************************************************************************
    *                                                                         *
    * Tell Sails what database(s) it should use in production.                *
@@ -231,7 +229,7 @@ module.exports = {
     //   'https://example.com',
     //   'https://staging.example.com',
     // ],
-    onlyAllowOrigins: ['*'],
+    onlyAllowOrigins: ['https://suyeshauth.herokuapp.com/'],
     /***************************************************************************
      *                                                                          *
      * If you are deploying a cluster of multiple servers and/or processes,     *

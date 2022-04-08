@@ -12,7 +12,8 @@
  * For more information on configuring datastores, check out:
  * https://sailsjs.com/config/datastores
  */
-
+// url: 'mysql://user:password@host:port/database',
+const DB = `${process.env.DB_NAME}://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`;
 module.exports.datastores = {
   /***************************************************************************
    *                                                                          *
@@ -48,7 +49,7 @@ module.exports.datastores = {
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
     adapter: 'sails-postgresql',
-    url: 'postgres://postgres:Suyesh@1408@db.jnhcwrketujuobhldhuc.supabase.co:6543/postgres',
+    url: DB,
   },
 };
 

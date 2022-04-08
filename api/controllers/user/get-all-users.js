@@ -13,7 +13,7 @@ module.exports = {
       select: ['firstName', 'lastName'],
     });
     Users.forEach((u) => {
-      u.id = undefined;
+      delete u.id;
     });
     sails.log.debug(Users);
     return this.res.json(Users);

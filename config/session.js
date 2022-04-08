@@ -8,7 +8,6 @@
  * For all available options, see:
  * https://sailsjs.com/config/session
  */
-
 module.exports.session = {
   /***************************************************************************
    *                                                                          *

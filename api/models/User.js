@@ -54,7 +54,8 @@ module.exports = {
     resetToken: {
       type: 'string',
     }, passwordChangedAt: {
-      type:'number'
+      type: 'number',
+      allowNull:true
     }
   },
   // customToJSON: function () {

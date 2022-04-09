@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 module.exports = {
   friendlyName: 'Send mail',
 
@@ -61,8 +62,8 @@ module.exports = {
       ],
     });
     request
-      .then((result) => {
-        console.log(result.body);
+      .then((_result) => {
+        // console.log(result.body);
       })
       .catch((err) => {
         console.log(err.statusCode);

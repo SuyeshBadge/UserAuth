@@ -11,6 +11,7 @@ module.exports = async (req, res, next) => {
       token = req.headers.authorization.split(' ')[1];
     } else if (req.cookies.jwt) {
       token = req.cookies.jwt;
+      // console.log(token);
     }
 
     if (!token) {
@@ -45,6 +46,6 @@ module.exports = async (req, res, next) => {
     next();
     return;
   } catch (err) {
-    return res.status(500).send(err.message);
+    return res.status(500).send(err);
   }
 };

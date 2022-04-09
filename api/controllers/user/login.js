@@ -1,8 +1,12 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const signToken = (id) => {
+  console.log(
+    sails.config.custom.JWT_EXPIRES_IN,
+    sails.config.custom.JWT_COOKIE_EXPIRES_IN
+  );
   return jwt.sign({ id }, sails.config.custom.JWT_SECRET, {
-    expiresIn: sails.config.custom.JWT_EXPIRES_IN,
+    expiresIn : sails.config.custom.JWT_EXPIRES_IN,
   });
 };
 

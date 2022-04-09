@@ -23,8 +23,8 @@ module.exports = {
         throw new Error('No User Registered with this email');
       }
       const hash = crypto.randomBytes(32).toString('hex');
-      console.log(`hash`);
-      const resetURL = `${this.req.protocol}://${this.req.host}/reset-password?token=${hash}`;
+      // console.log(`hash`);
+      const resetURL = `${this.req.protocol}://${this.req.hostname}/reset-password?token=${hash}`;
       const sender = 'suyeshbadge@protonmail.com';
       const userMail = user.email;
       const subject = 'Forgot Password';

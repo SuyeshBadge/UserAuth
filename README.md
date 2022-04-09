@@ -1,7 +1,7 @@
-# my-app
+# USER-AUTH
 
 a [Sails v1](https://sailsjs.com) application
-
+Demo [User-Auth](https://suyeshauth.herokuapp.com/users)
 
 ### Links
 

@@ -16,7 +16,6 @@ module.exports = {
     // All done.
     try {
       const user = this.req.user;
-      console.log(user);
       if (inputs.otp === user.emailOTP) {
         await User.update({ email: user.email }).set({
           emailVerified: true,
